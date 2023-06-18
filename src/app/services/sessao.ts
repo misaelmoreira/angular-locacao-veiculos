@@ -9,6 +9,11 @@ class Sessao {
       return usuarioId
     }
   }
+
+  public static clearUsuario(): void {
+    localStorage.removeItem("usuario")
+  }
+
 }
 
 export default Sessao
