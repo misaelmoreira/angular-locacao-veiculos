@@ -1,0 +1,36 @@
+<div *ngIf="veiculo" class="card h-100">
+  <!-- Product image-->
+  <a href="/loja/locacao/">
+  </a>
+  <!-- Product details-->
+  <div class="card-body p-4">
+    <div class="text-center">
+      <!-- Product name-->
+      <h5 class="fw-bolder">
+        {{ veiculo.nome }}
+      </h5>
+      <!-- Product price-->
+      <div class="detalhesVeiculos">
+        <div class="detalhesVeiculoContainer">
+          <p>Cor</p>
+          <p class="card-text">
+            {{veiculo.cor}}
+          </p>
+        </div>
+        <div class="detalhesVeiculoContainer">
+          <p>Qnt de Passageiros</p>
+          <p class="card-text">
+            {{ veiculo.qnt_passageiros }}
+          </p>
+        </div>
+        <div class="detalhesVeiculoContainer">
+          <p>Marca</p>
+          <p class="card-text">
+            {{ veiculo.marca }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Product actions-->
+</div>
