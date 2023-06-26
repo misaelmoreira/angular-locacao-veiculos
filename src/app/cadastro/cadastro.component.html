@@ -1,0 +1,55 @@
+<div class="container">
+<div class="row g-1">
+  <div class="col-12">
+    <label for="nome" class="form-label">Nome</label>
+    <input type="text" class="form-control" id="nome" [(ngModel)]="usuario.nome">
+  </div>
+  <div class="col-12">
+    <label for="cpf" class="form-label">Cpf</label>
+    <input type="text" class="form-control" mask="000.000.000-00" id="cpf" [(ngModel)]="usuario.cpf">
+  </div>
+  <div class="col-12">
+    <label for="data_nascimento" class="form-label">Data de Nascimento</label>
+    <input type="date" class="form-control" id="data_nascimento" [(ngModel)]="usuario.data_nascimento"> 
+  </div>
+  <div class="col-12">
+    <label for="endereco" class="form-label">Endereco</label>
+    <input type="text" class="form-control" id="endereco" [(ngModel)]="usuario.endereco"> 
+  </div>
+  <div class="col-12">
+    <label for="bairro" class="form-label">Bairro</label>
+    <input type="text" class="form-control" id="bairro" [(ngModel)]="usuario.bairro">
+  </div>
+  <div class="col-12">
+    <label for="cidade" class="form-label">Cidade</label>
+    <input type="text" id="cidade" class="form-control" [(ngModel)]="usuario.cidade">
+  </div>
+  <div class="col-12">
+    <label for="complemento" class=":form-label">Complemento</label>
+    <input type="text" class="form-control" id="complemento" [(ngModel)]="usuario.complemento">
+  </div>
+  <div class="col-12">
+    <label for="numero" class=":form-label">Numero</label>
+    <input type="text" class="form-control" id="numero" [(ngModel)]="usuario.numero">
+  </div>
+  <div class="col-12">
+    <label for="estado" class=":form-label">Estado</label>
+    <input type="text" class="form-control" id="estado" [(ngModel)]="usuario.estado">
+  </div>
+  <div class="col-12">
+    <label for="cep" class=":form-label">Cep</label>
+    <input type="text" class="form-control" id="cep" [(ngModel)]="usuario.cep">
+  </div>
+  <div class="col-12">
+    <label for="login" class=":form-label">Login</label>
+    <input type="email" class="form-control" id="login" [(ngModel)]="usuario.login">
+  </div>
+  <div class="col-12">
+    <label for="senha" class=":form-label">Senha</label>
+    <input type="password" class="form-control" id="senha" [(ngModel)]="usuario.senha">
+  </div>
+  <div class="col-12">
+    <button type="submit" class="btn btn-primary" name="action" (click)="salvar()">Cadastrar</button>
+  </div>
+</div>
+</div>

@@ -25,4 +25,12 @@ export class Usuario {
       console.log(err, "Erro ao fazer requisição via angular")
     }
   }
+
+async cadastrar(): Promise<any> {
+    try {
+      return await this.http.post<Usuario>(`${environment.apiUrl}/usuarios.json`, { usuario: this }).toPromise();
+    } catch (err) {
+      console.log(err, "Erro ao fazer requisição via angular")
+    }
+  }
 }

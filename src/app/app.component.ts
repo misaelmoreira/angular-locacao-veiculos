@@ -10,7 +10,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent implements OnInit{
   title = 'locacao-veiculos';
-  usuarioId?: number;
+  usuarioId?: string;
 
   constructor( http: HttpClient, private router: Router){}
   
@@ -21,6 +21,6 @@ export class AppComponent implements OnInit{
   logout(){
     Sessao.clearUsuario();
     this.router.navigateByUrl('/login');
-    //this.usuarioId;
+    this.usuarioId = "";
   }
 }

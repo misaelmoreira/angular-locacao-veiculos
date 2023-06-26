@@ -31,6 +31,7 @@ export class LoginComponent implements OnInit {
     this.usuario.senha = this.senha
 
     const usuario = await this.usuario.fazerLogin();
+    
     if (usuario && usuario.usuario.id) {
       Sessao.setUsuario(usuario.usuario.id)
       this.router.navigateByUrl('/')

@@ -1,6 +1,7 @@
-import { HttpClient } from "@angular/common/http"
+import { HttpClient, HttpHeaders } from "@angular/common/http"
 import { environment } from "src/environments/enviroment"
 import { Marca } from "src/app/models/marca"
+import Sessao from "../services/sessao"
 
 export class Veiculo {
   constructor(public http: HttpClient) { }
@@ -14,6 +15,6 @@ export class Veiculo {
   public marca?: Marca
 
   static async todos(http: HttpClient) {
-    return await http.get<Veiculo[]>(`${environment.apiUrl}/veiculos.json`).toPromise()
+    return await http.get<Veiculo[]>(`${environment.apiUrl}/veiculos_usuarios.json`).toPromise()
   }
 }
